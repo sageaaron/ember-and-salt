@@ -1,0 +1,69 @@
+import { Star } from "lucide-react";
+import Animated from "../components/Animated";
+
+const avatars = [
+  "/assets/user-1.jpeg",
+  "/assets/user-2.jpeg",
+  "/assets/user-3.jpeg",
+  "/assets/user-4.jpeg",
+];
+
+const Hero = () => {
+  return (
+    <section className="flex flex-col items-center min-h-screen justify-center bg-[url('/assets/heroBanner.png')] bg-cover bg-center bg-no-repeat px-4 pt-20">
+      <Animated y={-20} delay={0.2}>
+        <p className="text-orange-600">WHERE FIRE MEETS FLAVOUR</p>
+      </Animated>
+
+      <Animated>
+        <h1 className="text-5xl md:text-6xl font-medium max-w-3xl text-center mt-5 font-urbanist text-balance">
+          A DINING EXPERIENCE MADE TO BE SAVOURED
+        </h1>
+      </Animated>
+
+      <Animated delay={0.2}>
+        <p className="text-orange-600 max-w-md text-center mt-3">
+          A PLACE TO SLOW DOWN, SAVOUR EVERY BITE, AND SHARE THE MOMENTS THAT
+          LINGER LONG AFTER THE LAST PLATE IS CLEARED
+        </p>
+      </Animated>
+
+      <Animated>
+        <a
+          href="#booking-process"
+          className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 mt-8 rounded-full block transition"
+        >
+          Reserve A Table
+        </a>
+      </Animated>
+
+      <Animated className="flex items-center justify-center md:justify-start mt-9">
+        <div className="flex -space-x-3.5 pr-3">
+          {avatars.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="User"
+              className="size-10 border-2 border-slate-50 rounded-full hover:-translate-y-px transition"
+            />
+          ))}
+        </div>
+
+        <div className="flex flex-col items-start">
+          <div className="flex items-center gap-0.5">
+            {[...Array(5)].map((_, i) => (
+              <Star
+                key={i}
+                className="size-3.5 fill-orange-500 text-orange-500"
+              />
+            ))}
+          </div>
+
+          <p className="text-zinc-800">4.75/5 Rating - 5,000 Reviews</p>
+        </div>
+      </Animated>
+    </section>
+  );
+};
+
+export default Hero;
