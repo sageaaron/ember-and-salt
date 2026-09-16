@@ -1,16 +1,13 @@
-# React + Vite
+Ember & Salt – Frontend Portfolio Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ember & Salt is a responsive, production-ready web application built to demonstrate modern frontend development skills, UI/UX implementation, and component-driven architecture. The project simulates a high-end restaurant's online presence, covering everything from menu highlights and chef features to reservations, with a refined, atmospheric interface and smooth, deliberate motion throughout.
 
-Currently, two official plugins are available:
+Developed using React, Vite, and Tailwind CSS, the application emphasizes reusable components, scalable structure, and efficient state management. Motion drives scroll-triggered reveals, while Lenis powers buttery-smooth scrolling across the site. Together they showcase the ability to build maintainable frontend systems while delivering a polished, interaction-rich user experience across devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Live Demo: [add link after deploying]
 
-## React Compiler
+Tech Stack: React · Vite · Tailwind CSS · Motion · Lenis · JavaScript (ES6+) · Vercel (Deployment)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Highlights: Fully responsive, mobile-first design Scroll-triggered animations and smooth-scroll experience via Motion and Lenis Clean and modular component architecture (sections for Hero, About, Dishes, Features, Testimonials, Booking, FAQ, and more) Focus on performance and usability Production deployment with Vercel Strong emphasis on UI consistency, visual polish, and maintainability
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project reflects practical experience in building modern React applications and delivering user-focused interfaces aligned with real-world development standards.
